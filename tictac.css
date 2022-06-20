@@ -66,6 +66,7 @@ img {
     border: 2px solid #fff;
     padding: 5px;
     cursor: pointer;
+    user-select: none;
 }
 
 .reset-btn:hover {
