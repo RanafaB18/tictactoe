@@ -16,6 +16,8 @@ body {
     font-size: large;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    animation: appear 2s 1s forwards;
 }
 .grid-container {
     display: grid;
@@ -86,49 +88,49 @@ img {
 }
 #item-1 {
     top: -800px;
-    animation: appear 1s .9s forwards;
+    animation: drop 1s .9s forwards;
 }
 
 #item-2 {
     top: -800px;
-    animation: appear 1s .8s forwards;
+    animation: drop 1s .8s forwards;
 }
 
 #item-3 {
     top: -800px;
-    animation: appear 1s .7s forwards;
+    animation: drop 1s .7s forwards;
 }
 
 #item-4 {
     top: -800px;
-    animation: appear 1s .6s forwards;
+    animation: drop 1s .6s forwards;
 }
 
 #item-5 {
     top: -800px;
-    animation: appear 1s .5s forwards;
+    animation: drop 1s .5s forwards;
 }
 
 #item-6 {
     top: -800px;
-    animation: appear 1s .4s forwards;
+    animation: drop 1s .4s forwards;
 }
 
 #item-7 {
     top: -800px;
-    animation: appear 1s .3s forwards;
+    animation: drop 1s .3s forwards;
 }
 
 #item-8 {
     top: -800px;
-    animation: appear 1s .2s forwards;
+    animation: drop 1s .2s forwards;
 }
 
 #item-9 {
     top: -800px;
-    animation: appear 1s .1s forwards;
+    animation: drop 1s .1s forwards;
 }
-@keyframes appear {
+@keyframes drop {
     100% {
         top: 0;
     }
@@ -136,6 +138,11 @@ img {
 @keyframes enlarge {
     100%{
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes appear {
+    100%{
+        opacity: 1;
     }
 }
 @media only screen and (max-width: 900px){
