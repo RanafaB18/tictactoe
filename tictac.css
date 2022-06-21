@@ -42,8 +42,7 @@ img {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    transition: translate 1s;
+    transform: translate(-50%, -50%) scale(0);
     width: 200px;
     height: 170px;
     padding: 10px 0;
@@ -51,6 +50,7 @@ img {
     color: #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 20px #888;
+    animation: enlarge 0.5s ease-in forwards;
 
 }
 .modal.draw{
@@ -84,6 +84,11 @@ img {
     border-radius: 10px;
 }
 
+@keyframes enlarge {
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
 @media only screen and (max-width: 900px){
 
     body{
