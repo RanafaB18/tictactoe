@@ -76,6 +76,7 @@ img {
 }
 
 .item {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +84,55 @@ img {
     cursor: pointer;
     border-radius: 10px;
 }
+#item-1 {
+    top: -800px;
+    animation: appear 1s .9s forwards;
+}
 
+#item-2 {
+    top: -800px;
+    animation: appear 1s .8s forwards;
+}
+
+#item-3 {
+    top: -800px;
+    animation: appear 1s .7s forwards;
+}
+
+#item-4 {
+    top: -800px;
+    animation: appear 1s .6s forwards;
+}
+
+#item-5 {
+    top: -800px;
+    animation: appear 1s .5s forwards;
+}
+
+#item-6 {
+    top: -800px;
+    animation: appear 1s .4s forwards;
+}
+
+#item-7 {
+    top: -800px;
+    animation: appear 1s .3s forwards;
+}
+
+#item-8 {
+    top: -800px;
+    animation: appear 1s .2s forwards;
+}
+
+#item-9 {
+    top: -800px;
+    animation: appear 1s .1s forwards;
+}
+@keyframes appear {
+    100% {
+        top: 0;
+    }
+}
 @keyframes enlarge {
     100%{
         transform: translate(-50%, -50%) scale(1);
