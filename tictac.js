@@ -16,7 +16,7 @@ const win_combos = [
     [3, 5, 7],
 ];
 
-const buttons = document.querySelectorAll('img');
+const buttons = document.querySelectorAll('.grid-item');
 buttons.forEach(
     (button) => {
         button.addEventListener('click', function () {
