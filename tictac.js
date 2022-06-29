@@ -15,19 +15,8 @@ const win_combos = [
     [1, 5, 9],
     [3, 5, 7],
 ];
-
-const buttons = document.querySelectorAll('.grid-item');
-buttons.forEach(
-    (button) => {
-        button.addEventListener('click', function () {
-            getId(button.id);
-        }, false);
-    }
-);
-
-
 function getId(id) {
-    gridItemID = id;
+    gridItemID = id.id;
     var num = parseInt(gridItemID.replace(/[^0-9]/g, ''));
     if (playerTurn == 1) {
         player_One.push(num);
@@ -36,6 +25,7 @@ function getId(id) {
         player_Two.push(num);
     }
     alreadyTapped.push(num);
+    console.log(alreadyTapped);
     changeTurn();
 }
 
